@@ -21,7 +21,7 @@ During the DANGER state, the screen flashes "DANGER DANGER" in bright red to ale
 - Visual indicators for each state
 - Bright red "DANGER DANGER" flash during danger state
 - Graceful fallback to console mode if GUI is not available
-- Maintains minimum 8 FPS on CPU-only systems
+- Optimized for performance - maintains 15+ FPS on CPU-only systems
 
 ## Technologies Used
 
@@ -75,7 +75,12 @@ For detailed installation instructions and troubleshooting, please refer to [Qui
 
 ## Performance
 
-The system is optimized to run at a minimum of 8 FPS on CPU-only systems using only OpenCV and NumPy, without any specialized hardware acceleration or cloud services.
+The system is optimized to run at 15+ FPS on CPU-only systems using only OpenCV and NumPy, without any specialized hardware acceleration or cloud services. Performance optimizations include:
+
+- Frame resizing for faster processing
+- Optimized morphological operations
+- Efficient distance calculations
+- Reduced rendering overhead
 
 ## GUI Support
 
